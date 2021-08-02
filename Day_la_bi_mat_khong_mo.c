@@ -3,18 +3,18 @@
 #include <string.h>
 #include<windows.h>
 
-void SetWindowSize(LONG width, LONG height)
-{
-	HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
+// void SetWindowSize(LONG width, LONG height)
+// {
+// 	HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
 	
-	SMALL_RECT WindowSize;
-	WindowSize.Top = 0;
-	WindowSize.Left = 0;
-	WindowSize.Right = width;
-	WindowSize.Bottom = height;
+// 	SMALL_RECT WindowSize;
+// 	WindowSize.Top = 0;
+// 	WindowSize.Left = 0;
+// 	WindowSize.Right = width;
+// 	WindowSize.Bottom = height;
 	
-	SetConsoleWindowInfo(hStdout, 1, &WindowSize);
-}
+// 	SetConsoleWindowInfo(hStdout, 1, &WindowSize);
+// }
 
 void delay(float number_of_seconds)
 {
@@ -49,7 +49,7 @@ void image(){
 
 int main()
 {
-	SetWindowSize(200000, 200000);
+	//SetWindowSize(200000, 200000);
     char pass[30], pass1[30];
     printf("Em co yeu anh khong? (co/khong): ");
     fflush(stdin);
