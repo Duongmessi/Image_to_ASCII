@@ -67,7 +67,7 @@ int main()
     fflush(stdin);
     gets(pass);
 
-    while(strcmp(pass, "15/11/2002") != 0)
+    while(strcmp(pass, "day/month/year") != 0)
     {
         printf("\n\n");
         
@@ -77,7 +77,7 @@ int main()
         gets(pass);
 
     } 
-    if(strcmp(pass, "15/11/2002") == 0)
+    if(strcmp(pass, "day/month/year2") == 0)
     {
         image();
     }
